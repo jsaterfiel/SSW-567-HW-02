@@ -40,13 +40,13 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual( classifyTriangle(24, 7, 25), __RIGHT__, '24, 7, 25 is a Right triangle' )
     
     def testRightTriangleLargeA(self): 
-        self.assertEqual( classifyTriangle(220, 200, 25), __RIGHT__, '200, 220, 25 is a Right triangle' )
+        self.assertEqual( classifyTriangle(32, 255, 257), __RIGHT__, '32, 255, 257 is a Right triangle' )
 
     def testRightTriangleLargeB(self): 
-        self.assertEqual( classifyTriangle(200, 25, 220), __RIGHT__, '200, 25, 220 is a Right triangle' )
+        self.assertEqual( classifyTriangle(255, 257, 32), __RIGHT__, '255, 257, 32 is a Right triangle' )
 
     def testRightTriangleLargeC(self): 
-        self.assertEqual( classifyTriangle(25, 220, 200), __RIGHT__, '25, 220, 200 is a Right triangle' )
+        self.assertEqual( classifyTriangle(257, 32, 255), __RIGHT__, '257, 32, 255 is a Right triangle' )
         
     def testEquilateralTrianglesSmall(self): 
         self.assertEqual( classifyTriangle(1, 1, 1), __EQUILATERAL__, '1, 1, 1 should be equilateral' )
